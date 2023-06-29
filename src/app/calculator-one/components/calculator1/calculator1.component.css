@@ -1,0 +1,32 @@
+body{
+   text-align: center;
+   border-style:inset ;
+   border-radius: 10px;
+   box-shadow: 10px;
+   margin: 5vh;
+   display: grid;
+   justify-content: center;
+   background-color: lightgray;
+}
+
+.calculator{
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-item{
+   width: 30px;
+   height: 30px;
+   margin: 2px;
+   color: rgb(220, 87, 87);
+   background-color: aquamarine;
+   border-radius: 10px;
+}
+
+.result{
+   color: rgb(220, 87, 87);
+   background-color: aquamarine;
+   margin: 3vh;
+   border-radius: 2px;
+}

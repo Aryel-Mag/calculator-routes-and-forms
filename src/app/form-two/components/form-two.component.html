@@ -1,0 +1,30 @@
+<mat-grid-list cols="2" rowHeight="100vh">
+  <mat-grid-tile>
+    <mat-grid-list cols="2" rowHeight="1:1">
+      <h2>Please, enter your information below:</h2>
+
+      first Name : <input type="text" [formControl]="firstName" (change)="setFirstName()"> <br> <br>
+      Last Name : <input type="text" [formControl]="lastName" (change)="setLastName()"> <br> <br>
+      E-Mail : <input type=" text" [formControl]="eMail" (change)="setEmail()"> <br> <br>
+      Mobile : <input type=" text" [formControl]="phone" (change)="setPhone()"> <br> <br>
+      Message : <input type=" text" [formControl]="message" (change)="setMessage()"> <br> <br>
+
+    </mat-grid-list>
+
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-grid-list cols=" 2" rowHeight="1:1">
+      <h2>First name: {{fNm}}</h2> <br> <br>
+      <h2>Last name: {{lNm}}</h2><br> <br>
+      <h2>E-Mail: {{ml}}</h2><br> <br>
+      <h2>Phone Number: {{phn}}</h2><br> <br>
+      <h2>Message: {{msg}}</h2><br> <br>
+      <div class=" arrow">
+        <button type="button" routerLink="/form-1">Previous</button>
+      </div>
+      <div class=" arrow">
+        <button type="button" routerLink="/form-3">Next</button>
+      </div>
+    </mat-grid-list>
+  </mat-grid-tile>
+</mat-grid-list>

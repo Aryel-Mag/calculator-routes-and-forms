@@ -1,0 +1,41 @@
+<mat-grid-list cols="2" rowHeight="100vh">
+  <mat-grid-tile>
+    <mat-grid-list cols="2" rowHeight="1:1">
+      <h2>Please, enter your information below:</h2>
+
+      <form #myForm="ngForm" (ngSubmit)="saveUser(myForm.value)">
+        <input type="text" name="firstName" placeholder="First Name" [(ngModel)]="firstName"> <br> <br>
+        <input type="text" name="lastName" placeholder="Last Name" id="" [(ngModel)]="lastName"><br> <br>
+        <input type="text" name="eMail" placeholder="E-mail" id="" [(ngModel)]="eMail"><br> <br>
+        <input type="text" name="mobile" placeholder="Mobile number" id="" [(ngModel)]="phone"><br> <br>
+
+        <textarea name="message" id="" cols="30" rows="10" [(ngModel)]="message">
+
+         </textarea><br> <br>
+
+        <button type="submit">Save</button>
+      </form>
+    </mat-grid-list>
+
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-grid-list cols="2" rowHeight="1:1">
+      <h2>First name: {{live_firstName}}</h2> <br>
+      <input type="text" name="firstName" placeholder="First Name" [(ngModel)]="firstName"> <br>
+      <h2>Last name: {{live_lastName}}</h2><br>
+      <input type="text" name="lastName" placeholder="Last Name" id="" [(ngModel)]="lastName"><br>
+      <h2>E-Mail: {{live_eMail}}</h2><br> <br>
+      <input type="text" name="eMail" placeholder="E-mail" id="" [(ngModel)]="eMail"><br>
+      <h2>Phone Number: {{live_phone}}</h2><br>
+      <input type="text" name="mobile" placeholder="Mobile number" id="" [(ngModel)]="phone"><br>
+      <h2>Message: {{live_message}}</h2><br>
+      <textarea name="message" id="" cols="30" rows="10" [(ngModel)]="message"></textarea>
+      <div class=" arrow">
+        <button type="button" routerLink="/cal2">Previous</button>
+      </div>
+      <div class=" arrow">
+        <button type="button" routerLink="/form-2">Next</button>
+      </div>
+    </mat-grid-list>
+  </mat-grid-tile>
+</mat-grid-list>

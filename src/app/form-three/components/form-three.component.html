@@ -1,0 +1,54 @@
+HELLO WORLD
+
+<mat-grid-list cols="2" rowHeight="">
+  <mat-grid-tile>
+    <mat-grid-list cols="1" rowHeight="1:1">
+      <h2>Please, fill form:</h2> <br>
+
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput [formControl]="firstName">
+      </mat-form-field> <br> <br>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput [formControl]="lastName">
+      </mat-form-field> <br> <br>
+
+      <mat-form-field appearance="outline">
+        <mat-label>E-Mail</mat-label>
+        <input matInput [formControl]="eMail">
+      </mat-form-field> <br> <br>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Phone</mat-label>
+        <input matInput [formControl]="phone">
+      </mat-form-field> <br> <br>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Message</mat-label>
+        <input matInput [formControl]="message">
+      </mat-form-field> <br> <br>
+
+
+      <button mat-button (click)="stockData()">Submit</button>
+
+    </mat-grid-list>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-grid-list cols=" 1" rowHeight="1:1">
+      <h2>First name: {{fNm}}</h2> <br> <br>
+      <h2>Last name: {{lNm}}</h2><br> <br>
+      <h2>E-Mail: {{ml}}</h2><br> <br>
+      <h2>Phone Number: {{phn}}</h2><br> <br>
+      <h2>Message: {{msg}}</h2><br> <br>
+    </mat-grid-list>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<div class=" arrow">
+  <button type="button" routerLink="/form-2">Previous</button>
+</div>
+<div class=" arrow">
+  <button type="button" routerLink="/hero-form">Next</button>
+</div>

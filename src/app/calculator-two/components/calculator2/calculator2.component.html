@@ -1,0 +1,35 @@
+<body>
+   <div class="cal-container">
+      <div class="res-class">
+         <app-result resultValue="{{result}}"></app-result>
+      </div>
+
+      <div class="btn-container">
+         <app-buttons inputValue="1" (buttonClick)="display('1')"></app-buttons>
+         <app-buttons inputValue="2" (buttonClick)="display('2')"></app-buttons>
+         <app-buttons inputValue="3" (buttonClick)="display('3')"></app-buttons>
+         <app-buttons inputValue="4" (buttonClick)="display('4')"></app-buttons>
+         <app-buttons inputValue="5" (buttonClick)="display('5')"></app-buttons>
+         <app-buttons inputValue="6" (buttonClick)="display('6')"></app-buttons>
+         <app-buttons inputValue="7" (buttonClick)="display('7')"></app-buttons>
+         <app-buttons inputValue="8" (buttonClick)="display('8')"></app-buttons>
+         <app-buttons inputValue="9" (buttonClick)="display('9')"></app-buttons>
+         <app-buttons inputValue="0" (buttonClick)="display('0')"></app-buttons>
+
+         <app-buttons inputValue="+" (buttonClick)="signChange('+')"></app-buttons>
+         <app-buttons inputValue="-" (buttonClick)="signChange('-')"></app-buttons>
+         <app-buttons inputValue="*" (buttonClick)="signChange('*')"></app-buttons>
+         <app-buttons inputValue="/" (buttonClick)="signChange('/')"></app-buttons>
+
+         <app-buttons inputValue="=" (buttonClick)="calculate()"></app-buttons>
+
+         <app-buttons inputValue="Clr" (buttonClick)="clearResult()"></app-buttons>
+      </div>
+   </div>
+</body>
+<div class=" arrow">
+   <button type="button" routerLink="/cal1">Previous</button>
+</div>
+<div class=" arrow">
+   <button type="button" routerLink="/form-1">Next</button>
+</div>
